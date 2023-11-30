@@ -7,6 +7,7 @@ public class SearchString {
     public static void main(String args[]){
         String pattern;
         String file;
+        // Checks to see if correct amount of arguments
         if(args.length == 2){ 
             pattern = args[0];
             file = args[1];
@@ -18,12 +19,12 @@ public class SearchString {
                         System.out.println(nextLine);
                     }
                 }
-                scan.close(); // Close the scanner to release resources
+                scan.close();
             } catch (FileNotFoundException e) {
                 System.out.println("File not found: " + file);
             }
         }else{
-            System.out.println("Wrong number of inputs");
+            System.out.println("Usage: java StringSearch [-i] <pattern> <file>");
         }
     }
 }
