@@ -23,7 +23,7 @@ public class SearchString {
                 System.out.println("File not found: " + file);
             }
         }else{
-            System.out.println("Wrong number of imputs");
+            System.out.println("Wrong number of inputs");
         }
     }
 }
